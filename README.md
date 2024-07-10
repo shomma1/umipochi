@@ -1,4 +1,4 @@
-# umipochi
+# UMI-POCHI
 
 Data processing scripts for UMI-POCHI.
 
