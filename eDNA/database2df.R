@@ -40,6 +40,7 @@ for (i in 1:nrow(sample_list)) {
         d_eDNA <- d$Fish_eDNA[[k]]
         
         if ((d_eDNA$analysis == "metabarcoding") &
+            # (d_eDNA$day == sample$day) &
             (d_eDNA$year == sample$year ) &
             (d_eDNA$month == sample$month)){
           
