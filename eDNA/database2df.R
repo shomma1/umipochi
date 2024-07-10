@@ -85,8 +85,14 @@ for (i in 1:nrow(sample_list)) {
   print(sample$sample)
 }
 
+# transform
 df_merge[is.na(df_merge)] <- 0
-write.csv(df_merge, "./output/df.csv", row.names = F)
+df <- as.data.frame(t(df_merge))
+colnames(df) <- df["Species", ]
+df <- df[rownames(df) != "Species", ]
+df <- cbind(sample = rownames(df), df)
+
+write.csv(df, "./output/df.csv", row.names = F)
 write.csv(sample_list, "./output/sample_info.csv", row.names = F)
 
 print("Finish")
