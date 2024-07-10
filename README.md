@@ -2,7 +2,7 @@
 
 Data processing scripts for UMI-POCHI.
 
-## extract eDNA data as CSV from JSON database.
+## Extract eDNA data as CSV from JSON database.
 
 UMI-POCHI provides the function to get the eDNA data as CSV.
 However, the function to acquire data from multiple survey points has not yet been implemented.
